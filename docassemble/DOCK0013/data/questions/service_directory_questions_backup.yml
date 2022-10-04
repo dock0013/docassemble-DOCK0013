@@ -1,0 +1,243 @@
+---
+#questions that will supply data
+#need to work out how to only asked part 2 if yes is selected 
+#tagging system will need to be applied to services e.g. services for domestic violence tagged DV etc
+---
+question: Personal Details
+subquestion: |
+  Please select the location where you wish to see potential services in.
+  
+  You may choose more then one location.
+fields:
+  - no label: SDJNlocation
+    datatype: checkboxes
+    choices: 
+      - Central Adelaide
+      - Adelaide North
+      - Adelaide South
+      - Country North
+      - Country South
+---
+question: Age
+subquestion: |
+  Please select your age range.
+fields:
+  - no label: SDJNage
+    datatype: radio
+    choices: 
+      - under 18
+      - 18-25
+      - 25-70
+      - 70+
+---
+question: Are you looking for a service that supports {families}?
+fields:
+  - no label: SDJNfamily
+    datatype: radio
+    choices:
+      - yes: fam
+      - no: not_fam
+---
+question: Does your issue concern any of the below?
+fields:
+  - no label: SDJNfamily_2
+    datatype: radio
+    choices:
+      - Divorce: div
+      - Marriage: marry
+      - Child Support: C_S
+      - Defacto relationships: def_rs
+      - My issue does not concern any of these: no
+---
+question: Does your issue concern a criminal matter
+fields:
+  - no label: SDJNcrim
+    datatype: radio
+    choices:
+      - Yes: CRIM
+      - No: not_CRIM
+under: |
+   If you are in immediate need of help or if an emergency is occuring please call the police on 000. Services pertaining to Criminal matters are only avaliable for minor crimes.
+---
+question: Does your issue concern any of the below?
+fields:
+  - no label: SDJNcrim_2
+    datatype: radio
+    choices:
+      - Road offenes: RO_OF
+      - minor crimes: MC
+      - victims of crime: VOC
+      - My issue does not concern any of these: no
+---
+question: Does your issue concern {personal injury}?
+fields:
+  - no label: SDJNPJ
+    datatype: radio
+    choices:
+     - yes: PJ
+     - no: not_PJ
+---
+question: Does your issue concern any of the below?
+fields:
+  - no label: SDJNPJ_2
+    datatype: radio
+    choices:
+      - Injury at my workplace: fault_my_workplace
+      - Injury at another workplace: fault_diff_workplace
+      - Injury at hands of another: fault_another
+      - Injury from a product: fault_product
+      - medical malpractice: med_mal
+      - Accidental injury: fault_accident
+      - I have injured someone: fault_mine
+      - My issue does not concern any of these:
+---
+question: Does your issue concern {Courts or Dispute Resolution}?
+fields:
+  - no label: SDJNcourts
+    datatype: radio
+    choices:
+      - yes: courts
+      - no: not_courts
+---     
+question: Does your issue concern any of the issues below?
+fields:
+  - no label: SDJNcourts_2
+    datatype: radio
+    choices:     
+      - Documentation: doc
+      - Self representation: self_rep
+      - Court help: CH
+      - Mediation: mediate
+      - Pro bono representation: PBR
+      - Alternative Dispute Resolution: ADR
+      - My issue does not concern any of these: no
+---
+question: Does your issue concern {Buisness or Employment}?
+fields:
+  - no label: SDJNBUS
+    datatype: radio
+    choices:
+      - yes: BUS
+      - no: not_BUS
+---     
+question: Does your issue concern any of the issues below?
+fields:
+  - no label: SDJNBUS_2
+    datatype: radio
+    choices:     
+      - Employment 
+      - Shareholders
+      - Directors 
+      - Selling business 
+      - workers rights
+      - My issue does not concern any of these
+---
+question: Does your issue concern {probate}?
+fields:
+  - no label: SDJNprobate
+    datatype: radio
+    choices:
+      - yes: probate
+      - no: not_probate
+---     
+question: Does your issue concern any of the issues below?
+fields:
+  - no label: SDJNprobate_2
+    datatype: radio
+    choices:     
+      - wills
+      - executors 
+      - deceased estate
+      - My issue does not concern any of these
+---
+question: Does your issue concern {Property}?
+fields:
+  - no label: SDJNprop
+    datatype: radio
+    choices:
+      - yes: prop
+      - no: not_prop
+---     
+question: Does your issue concern any of the issues below?
+fields:
+  - no label: SDJNprop_2
+    datatype: radio
+    choices:     
+      - Trusts 
+      - Housing 
+      - Personal property
+      - Leasing 
+      - Selling property
+      - Conveyancing
+      - My issue does not concern any of these
+---
+question: Does your issue concern a different civil matter outlined below?
+fields:
+  - no label: SDJNcivil
+    datatype: radio
+    choices:    
+      - Negligence: neg
+      - Trespass: trp
+      - Contract Breaches: CB
+      - My issue does not concern any of these: not_civil
+---
+question: Does your issue concern any of the issues below?
+fields:
+  - no label: SDJNother
+    datatype: radio
+    choices:     
+      - Environment: env
+      - LGBTQ+ issues: LGBT
+      - Elder Rights: elder
+      - Homelessness: homeless
+      - Race discrimination: RD
+      - Human rights: HR
+      - My issue does not concern any of these: not_other
+---
+Question: What gender do you identify as?
+fields: 
+  - no label: SDJNgender
+    datatype: radio
+    choices:
+      - Woman: fem
+      - Man: Not_fem
+      - Non-binary: NB
+      - other: other
+      - prefer not to say: not_fem
+---
+Question: Do you identify as Aboriginal or Torres Strait Islander (ATSI) ?
+fields: 
+  - no label: SDJNATSI
+    datatype: radio
+    choices:
+      - yes: ATSI
+      - No: Not_ATSI
+---
+question: Are you looking for a {domestic violence} service?
+fields:
+  - no label: SDJNDV
+    datatype: radio
+    choices:
+      - I am seeking domestic violence services: DV
+      - I am not seeking domestic violence services: Not_DV
+under: |
+   Examples of domestic violence are listed [here](https://www.voc.sa.gov.au/the-crime/types-of-crime/domestic-and-family-violence). If you urgently need domestic violence support, please call the Domestic Violence Crisis Line at 1800 800 098
+---
+terms:
+  families: |
+    Family refers to areas of law that affect family units including issues such as child support, divorce, defacto relationships, marriage, family violence and other issues. Select yes if you are unsure to see avaliable selections.
+  personal injury: |
+    Personal injury refers to physical ailment occuring from an external force such as another person, surroundings, and other forms.
+  Courts or Dispute Resolution: |
+    This refers to issues relating to the functions of courts including representation, documents, the ways courts function, and alternative forms of dispute resolution.
+  Buisness or Employment: |
+    This includes workplace issues for both employees, buisness owners, and shareholders.
+  probate: |
+   Reffering to wills and deceased estates.
+  Property: |
+   Property issues address legally protected claims to a variety of things including houses, personal items, tusts, and more.
+  prefer not to say: |
+   If selected no services specific to gender will appear.
+  domestic violence: |
+    Domestic violence is a pattern of abusive behaviour by one person against another within a marriage or dating couple, or within a family across generations.
+---

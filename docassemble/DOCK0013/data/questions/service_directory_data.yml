@@ -1,0 +1,89 @@
+---
+# All legal services are listed below
+# Your code needs to cycle through this list
+# and add any services which match the search
+# criteria your user has entered.
+variable name: SAH_serviceslist
+use objects: True
+data:
+  - service_name: "Northern Community Legal Service"
+    location:
+      - Adelaide North
+    clients:
+      - 
+    phone_number: +61 8 8281 6911
+    email: ncls@northernlegal.org.au
+    website: www.northernlegal.org.au
+  - service_name: "Working Women's Centre"
+    location:
+      - Adelaide North
+    clients:
+      - 
+    phone_number: +61 1800 652 697
+    email:
+    website: wwwcsa.org.au
+  - service_name: "The Refugee Advocacy Service of SOuth Australia"
+    location:
+      - North Adelaide
+    clients:
+      - 
+    phone_number: +61 401 247 224
+    email:
+    website: 
+  - service_name: Uniting Communities Law Centre
+    location:
+      - North Adelaide 
+    clients:
+      - 
+    phone_number: +61 8 8202 5960
+    email:
+    website:
+  - service_name: 
+    location:
+      -
+    clients:
+      - 
+    phone_number: 
+    email:
+    website:
+  - service_name: 
+    location:
+      -
+    clients:
+      - 
+    phone_number: 
+    email:
+    website:
+  - service_name: 
+    location:
+      -
+    clients:
+      - 
+    phone_number: 
+    email:
+    website:
+  - service_name: 
+    location:
+      -
+    clients:
+      - 
+    phone_number: 
+    email:
+    website:
+  - service_name: 
+    location:
+      -
+    clients:
+      - 
+    phone_number: 
+    email:
+    website:
+  - service_name: 
+    location:
+      -
+    clients:
+      - 
+    phone_number: 
+    email:
+    website:
+---
